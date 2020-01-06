@@ -22,7 +22,7 @@
                     placeholder="여기에 시작 문장을 입력하세요."></textarea>
                 <div class="d-flex justify-content-end">
                     <button class="btn aqua-gradient" type="submit">이어쓰기 요청</button>
-                    <input class="btn aqua-gradient" type="button" id="papago" onclick="papago();" value="한글로 바꾸기" />
+                    <input class="btn aqua-gradient" type="button" id="papago" onclick="translate" value="한글로 바꾸기" />
 
                 </div>
             </form>
@@ -49,7 +49,7 @@
         });
     </script>
     <script>
-function papago() {
+function translate() {
   var targetText = document.getElementById('textarea').value;
   location.href="https://papago.naver.com/?sk=en&tk=ko&hn=0&st="+targetText;
 }
