@@ -38,7 +38,7 @@
     <script>
         $('form').on('submit', function (e) {
             e.preventDefault();
-            $.post(window.location.href, $(this).serialize(), function (data) {
+            $.post("https://gpt2.ai-demo.xyz/", $(this).serialize(), function (data) {
                 console.log('Result Found!')
                 $('textarea').val(data)
             });
